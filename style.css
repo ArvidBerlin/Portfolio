@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-image: url(images/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg);
+    font-family: "Montserrat";
+}
+
+.headermenu {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: right;
+    list-style: none;
+}
+
+.headermenuitem {
+    text-decoration: none;
+    color: #7648b8;
+}
+
+.currentheadermenuitem {
+    text-decoration: none;
+    color: #dac9f2;
+}
+
+.introduction {
+    color: #ae88e3;
+}
+
+.introduction h2 {
+    color: #d0bbf0;
+}
