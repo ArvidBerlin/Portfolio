@@ -73,3 +73,30 @@ body {
     color: #c43880;
     border: 1px solid #c43880;
 }
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about article {
+    flex: 1;
+}
+
+.about h2 {
+    color: #d0bbf0;
+}
+
+.about p {
+    color: #d0bbf0;
+}
+
+.about img {
+    flex-shrink: 0;
+    width:350px;
+    height:350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
