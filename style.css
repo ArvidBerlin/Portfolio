@@ -55,21 +55,44 @@ body {
     padding: 0;
 }
 
-.introduction a {
+.buttons {
+    padding-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.download-button {
     text-decoration: none;
-    margin-top: 50px;
     padding: 8px;
     color: #4ef9ce;
     border: 1px solid #4ef9ce;
     transition: color 0.2s ease, border-color 0.2s ease;
 }
 
-.introduction a:hover {
+.download-button:hover {
     color: #36a78b;
     border: 1px solid #36a78b;
 }
 
-.introduction a:active {
+.download-button:active {
+    color: #c43880;
+    border: 1px solid #c43880;
+}
+
+.contact-button {
+    text-decoration: none;
+    padding: 8px;
+    color: #ffaf8d;
+    border: 1px solid #ffaf8d;
+    transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-button:hover {
+    color: #c68061;
+    border: 1px solid #c68061;
+}
+
+.contact-button:active {
     color: #c43880;
     border: 1px solid #c43880;
 }
