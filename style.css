@@ -1,7 +1,7 @@
 body {
     background-image: url(images/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg);
     font-family: "GeistMono";
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -28,6 +28,31 @@ body {
     text-decoration: none;
     color: #e3d3f9;
 }
+
+footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+footer p {
+    color: #ae88e3;
+    font-size: 18px;
+}
+
+#linkedin {
+    font-size: 35px;
+    color: #497fe2;
+    padding-left: 20px;
+}
+
+#github {
+    font-size: 35px;
+    color: #be49e2;
+    padding-left: 20px;
+}
+
+/* Index page */
 
 .introduction {
     display: flex;
@@ -99,28 +124,7 @@ body {
     border: 1px solid #c43880;
 }
 
-footer {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-}
-
-footer p {
-    color: #ae88e3;
-    font-size: 18px;
-}
-
-#linkedin {
-    font-size: 35px;
-    color: #497fe2;
-    padding-left: 20px;
-}
-
-#github {
-    font-size: 35px;
-    color: #be49e2;
-    padding-left: 20px;
-}
+/* About page */
 
 .about {
     display: flex;
@@ -152,31 +156,50 @@ footer p {
     flex-shrink: 0;
 }
 
-.skills {
+/* Skills page */
+
+.skills-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.skills-page h2 {
+    color: #d0bbf0;
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 165px;
+}
+
+.web-skills, .film-skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
-    max-width: 950px;
+    gap: 20px;
+    max-width: 100%;
     margin: 0 auto;
     padding-top: 10px;
-    padding-bottom: 7px;
+    padding-bottom: 10px;
 }
 
-.skills figure {
+.web-skills figure, .film-skills figure {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.skills img {
-    width: 200px;
+.web-skills img, .film-skills img {
+    width: 100px;
     height: auto;
 }
 
-.skills figcaption {
+.web-skills figcaption, .film-skills figcaption {
     font-size: 16px;
     color: #8550cf; 
     text-align: center; 
+}
+
+.film-skills {
+    padding-bottom: 52px;
 }
