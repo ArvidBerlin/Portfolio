@@ -33,12 +33,12 @@ body {
 #contact-nav {
     text-decoration: none;
     padding: 8px;
-    color: #ffaf8d;
+    color: #c68061;
     transition: color 0.2s ease;
 }
 
 #contact-nav:hover {
-    color: #c68061;
+    color: #ffaf8d;
 }
 
 #currentcontact-nav {
