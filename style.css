@@ -161,14 +161,13 @@ footer p {
 .skills-page {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: center; 
 }
 
 .skills-page h2 {
     color: #d0bbf0;
     margin: 0;
     padding-top: 60px;
-    padding-left: 165px;
 }
 
 .web-skills, .film-skills {
