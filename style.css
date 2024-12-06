@@ -17,6 +17,7 @@ body {
 .headermenuitem {
     text-decoration: none;
     color: #8550cf;
+    transition: color 0.2s ease;
 }
 
 .headermenuitem:hover {
@@ -27,6 +28,24 @@ body {
 .currentheadermenuitem {
     text-decoration: none;
     color: #e3d3f9;
+}
+
+#contact-nav {
+    text-decoration: none;
+    padding: 8px;
+    color: #ffaf8d;
+    transition: color 0.2s ease;
+}
+
+#contact-nav:hover {
+    color: #c68061;
+}
+
+#currentcontact-nav {
+    text-decoration: none;
+    padding: 8px;
+    color: #f1d6cb;
+    transition: color 0.2s ease;
 }
 
 footer {
