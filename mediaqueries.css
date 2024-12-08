@@ -166,3 +166,49 @@
         gap: 20px; 
     }
 }
+
+
+/* Skills page */
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+
+    .skills-page h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .web-skills, .film-skills {
+        gap: 5px;
+    }
+
+    .web-skills figure, .film-skills figure {
+        gap: 5px;
+    }
+
+    .web-skills img, .film-skills img {
+        width: 80px;
+    }
+
+    .web-skills figcaption, .film-skills figcaption {
+        font-size: 14px;
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 1080px) and (min-width: 769px) {
+
+    .skills-page h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .web-skills img, .film-skills img {
+        width: 85px;
+        padding: 0 20px 0 20px;
+    }
+
+    .web-skills figcaption, .film-skills figcaption {
+        font-size: 14px;
+    }
+}
