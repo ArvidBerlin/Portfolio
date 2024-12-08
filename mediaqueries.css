@@ -39,6 +39,41 @@
 }
 
 
+/* Footer */
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+
+    footer p {
+        font-size: 14px;
+    }
+
+    #linkedin {
+        font-size: 28px;
+    }
+
+    #github {
+        font-size: 28px;
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 1080px) and (min-width: 769px) {
+
+    footer p {
+        font-size: 16px;
+    }
+
+    #linkedin {
+        font-size: 30px;
+    }
+
+    #github {
+        font-size: 30px;
+    }
+}
+
+
 /* Index page */
 
 /* For mobile devices */
