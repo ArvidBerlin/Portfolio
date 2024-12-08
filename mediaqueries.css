@@ -3,7 +3,10 @@
 @media screen and (max-width: 768px) {
     
     .headermenu {
-        display: none;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: transform 0.3s ease, opacity 0.3s ease;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
@@ -16,10 +19,14 @@
     .hamburgermenu {
         display: flex;
         justify-content: flex-end;
+        padding-top: 10px;
     }
 
     .headermenu.show {
-        display: flex;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .headermenu li {
