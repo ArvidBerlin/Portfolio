@@ -20,6 +20,7 @@ p {
     justify-content: flex-end;
     list-style: none;
     font-size: 18px;
+    transition: all 0.3s ease;
 }
 
 .headermenuitem {
@@ -54,6 +55,13 @@ p {
     padding: 8px;
     color: #f1d6cb;
     transition: color 0.2s ease;
+}
+
+.hamburgermenu {
+    display: none;
+    cursor: pointer;
+    font-size: 48px;
+    color: #8550cf;
 }
 
 footer {
