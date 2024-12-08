@@ -15,6 +15,7 @@
 
     .hamburgermenu {
         display: flex;
+        justify-content: flex-end;
     }
 
     .headermenu.show {
