@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const headerMenu = document.querySelector('.headermenu');
 
     hamburgerIcon.addEventListener('click', () => {
-        headerMenu.classList.toggle('show');
+
+        if (headerMenu.classList.contains('show')) {
+            headerMenu.classList.remove('show');
+            headerMenu.classList.add('hide');
+        } else {
+            headerMenu.classList.remove('hide');
+            headerMenu.classList.add('show');
+        }
     });
 });

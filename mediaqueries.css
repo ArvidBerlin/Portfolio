@@ -6,7 +6,7 @@
         visibility: hidden;
         opacity: 0;
         transform: translateY(-20px);
-        transition: transform 0.3s ease, opacity 0.3s ease;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.8);
         position: absolute;
@@ -27,6 +27,13 @@
         opacity: 1;
         transform: translateY(0);
         transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .hamburgermenu.hide {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s;
     }
 
     .headermenu li {
