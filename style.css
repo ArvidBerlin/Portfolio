@@ -159,6 +159,31 @@ footer p {
     border: 1px solid #c43880;
 }
 
+.weather-api {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #e3d3f9;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: "GeistMono", monospace;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-api img {
+    width: 50px; 
+    height: auto; 
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
 /* About page */
 
 .about {
