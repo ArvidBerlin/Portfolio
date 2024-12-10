@@ -283,6 +283,7 @@ footer p {
 .earlier-work {
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-direction: row;
 }
 
@@ -341,6 +342,7 @@ footer p {
 .film-work {
     display: flex;
     justify-content: center;
+    text-align: center;
     flex-direction: row;
     padding-bottom: 20px;
 }

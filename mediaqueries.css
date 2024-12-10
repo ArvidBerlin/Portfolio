@@ -173,7 +173,6 @@
 }
 
 
-
 /* About page */
 
 /* For mobile devices */
@@ -252,5 +251,121 @@
 
     .web-skills figcaption, .film-skills figcaption {
         font-size: 14px;
+    }
+}
+
+
+/* Portfolio page */
+
+/* for mobile devices */
+@media screen and (max-width: 768px) {
+
+    .portfolio-page h2 {
+        font-size: 20px;
+    }
+
+    .earlier-work {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    #grocery-product-catalog {
+        flex-direction: row;
+    }
+
+    #grocery {
+        width: 142px;
+        height: auto;
+    }
+
+    #edit-grocery {
+        width: 148px;
+        height: auto;
+    }
+
+    #harrys {
+        width: 380px;
+        height: auto;
+    }
+
+    .earlier-work figure img {
+        filter: none;
+    }
+    
+    .earlier-work figure img:hover {
+        filter: none; 
+    }
+
+    .portfolio-page figcaption {
+        font-size: 14px;
+    }
+
+    .portfolio-page a {
+        font-size: 14px;
+    }
+
+    .film-work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .references {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .references img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* For tablets */
+@media screen and (max-width: 1080px) and (min-width: 769px) {
+
+    .portfolio-page h2 {
+        font-size: 22px;
+    }
+
+    #grocery-product-catalog {
+        flex-direction: row;
+    }
+
+    #grocery {
+        width: 200px;
+        height: auto;
+    }
+
+    #edit-grocery {
+        width: 208px;
+        height: auto;
+    }
+
+    #harrys {
+        width: 410px;
+        height: auto;
+    }
+
+    .portfolio-page figcaption {
+        font-size: 14px;
+    }
+
+    .portfolio-page a {
+        font-size: 14px;
+    }
+
+    .film-work {
+        align-items: center;
+        text-align: center;
+    }
+
+    .references {
+        align-items: center;
+    }
+
+    .references img {
+        width: 100px;
+        height: 100px;
     }
 }
