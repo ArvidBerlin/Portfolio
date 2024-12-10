@@ -262,3 +262,129 @@ footer p {
 .film-skills {
     padding-bottom: 52px;
 }
+
+/* Portfolio page */
+
+.portfolio-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.portfolio h2 {
+    color: #d0bbf0;
+    text-align: center;
+}
+
+#first-h2 {
+    padding-top: 45px;
+}
+
+.earlier-work {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#grocery {
+    width: 220px;
+    height: auto;
+}
+
+#edit-grocery {
+    width: 230px;
+    height: auto;
+}
+
+#harrys {
+    width: 450px;
+    height: auto;
+}
+
+.earlier-work figure {
+    text-align: center;
+    font-size: 16px;
+}
+
+.earlier-work figcaption {
+    color: #8550cf; 
+    padding-bottom: 10px; 
+}
+
+.earlier-work figure img {
+    filter: brightness(85%); 
+    transition: filter 0.3s ease; 
+}
+
+.earlier-work figure img:hover {
+    filter: brightness(100%); 
+}
+
+.earlier-work a {
+    text-decoration: none;
+    font-size: 16px;
+    width: auto;
+    color: #4ef9ce; 
+    border: 1px solid #4ef9ce;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 auto;
+    text-align: center; 
+}
+
+.earlier-work a:hover {
+    color: #36a78b;
+    border: 1px solid #36a78b;
+}
+
+.film-work {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.film-work img {
+    width: 250px;
+}
+
+.film-work figcaption {
+    color: #8550cf;
+}
+
+#a-day-and-a-half {
+    padding-top: 10px;
+}
+
+#blindspår {
+    padding-top: 6px;
+}
+
+.references {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.references figure {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+
+.references figcaption {
+    color: #8550cf;
+    align-content: center;
+    padding-left: 10px;
+}
+
+.references img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
