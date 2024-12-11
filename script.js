@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 /* Resumé download check */
 
 function setupDownloadConfirmation() {
@@ -98,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Error fetching weather data:', error);
         });
 });
+
 
 /* Contact form validation */
 
