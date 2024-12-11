@@ -22,6 +22,7 @@ function setupDownloadConfirmation() {
   // Get elements
   const downloadLink = document.getElementById("download-link");
   const customConfirm = document.getElementById("custom-confirm");
+  const confirmBox = customConfirm.querySelector(".confirm-box");
   const confirmYes = document.getElementById("confirm-yes");
   const confirmNo = document.getElementById("confirm-no");
 
@@ -45,6 +46,14 @@ function setupDownloadConfirmation() {
       customConfirm.style.display = "none"; 
       console.log("Download aborted."); 
   });
+
+  // If user click outside of confirm box
+  customConfirm.addEventListener("click", function (event) {  
+    if (!confirmBox.contains(event.target)) {
+        customConfirm.style.display = "none";
+        console.log("Confirm box was closed by clicking outside of box.");
+    }
+});
 }
 
 // Run when page is loaded
