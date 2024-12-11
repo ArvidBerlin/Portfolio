@@ -401,7 +401,6 @@ footer p {
 
 /* Contact page */
 
-
 .contact-page h2 {
     color: #d0bbf0;
     text-align: center;
@@ -458,6 +457,12 @@ footer p {
 .contact-details table {
     width: 100%; 
     text-align: left;
+}
+
+.contact-details th,
+.contact-details td {
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .contact-details a {
