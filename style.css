@@ -448,6 +448,7 @@ footer p {
 .contactform button {
     background-color: #8550cf;
     cursor: pointer;
+    position: relative;
 }
 
 .contactform button:hover {
@@ -515,4 +516,20 @@ footer p {
     font-size: 14px;
     display: block;
     margin-top: 5px;
-  }
+}
+
+.confirmation-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    background-color: #c68061;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    z-index: 1000;
+}

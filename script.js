@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Contact form validation */
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Hindra formuläret från att skickas
+    event.preventDefault();
   
     let isValid = true;
   
@@ -126,22 +126,18 @@ document.getElementById('contactForm').addEventListener('submit', function (even
   // Form confirmation message
 
   function showConfirmation() {
+    const sendButton = document.querySelector('form button[type="submit"]');
+    const form = sendButton.closest('form');
+
     const confirmationMessage = document.createElement('div');
     confirmationMessage.textContent = 'Thank you for your message! I will get back to you as quickly as I can.';
-    confirmationMessage.style.position = 'fixed';
-    confirmationMessage.style.bottom = '100px';
-    confirmationMessage.style.left = '145px';
-    confirmationMessage.style.backgroundColor = '#c68061';
-    confirmationMessage.style.color = '#ffffff';
-    confirmationMessage.style.padding = '15px';
-    confirmationMessage.style.borderRadius = '8px';
-    confirmationMessage.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.2)';
-    confirmationMessage.style.zIndex = '1000';
-    confirmationMessage.style.fontSize = '14px';
+    confirmationMessage.classList.add('confirmation-message'); 
   
-    document.body.appendChild(confirmationMessage);
+    form.style.position = 'relative';
+
+    form.appendChild(confirmationMessage);
   
     setTimeout(() => {
       confirmationMessage.remove();
-    }, 5000);
+    }, 4000);
   }

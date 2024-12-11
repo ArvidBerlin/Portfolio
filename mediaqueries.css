@@ -369,3 +369,88 @@
         height: 100px;
     }
 }
+
+
+/* Contact page */
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+
+    .contact-page h2 {
+        font-size: 20px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactform input,
+    .contactform button,
+    .contactform textarea {
+        font-size: 14px;
+    }
+
+    .contact-details table {
+        font-size: 14px;
+        padding-top: 15px;
+    }
+
+    .contact-details a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .contact-details a i {
+        font-size: 30px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+
+    .confirmation-message {
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 10px;
+    }
+    
+}
+
+/* For tablets */
+@media screen and (max-width: 1080px) and (min-width: 769px) {
+
+    .contact-page h2 {
+        font-size: 22px;
+    }
+
+    .contactform input,
+    .contactform button,
+    .contactform textarea {
+        font-size: 14px;
+    }
+
+    .contact-details table {
+        font-size: 14px;
+    }
+
+    .contact-details a {
+        font-size: 18px;
+    }
+
+    .contact-details a i {
+        font-size: 35px;
+    }
+
+    .error-message {
+        font-size: 12px;
+    }
+
+    .confirmation-message {
+        padding: 10px;
+        border-radius: 8px;
+        font-size: 12px;
+    }
+}
