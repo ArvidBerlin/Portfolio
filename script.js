@@ -104,72 +104,72 @@ document.addEventListener('DOMContentLoaded', function () {
 /* Contact form validation */
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-  
-    let isValid = true;
-  
-    // First name validation
-    const firstName = document.getElementById('fname');
-    const firstNameError = document.getElementById('fnameError');
-    if (firstName.value.trim() === '') {
-      firstNameError.textContent = 'First name can not be empty.';
-      isValid = false;
-    } else if (!/^[a-zA-ZåäöÅÄÖ\s]+$/.test(firstName.value)) {
-      firstNameError.textContent = 'First name may only consist of letters.';
-      isValid = false;
-    } else {
-      firstNameError.textContent = '';
-    }
-  
-    // Last name validation
-    const lastName = document.getElementById('lname');
-    const lastNameError = document.getElementById('lnameError');
-    if (lastName.value.trim() === '') {
-      lastNameError.textContent = 'Last name can not be empty.';
-      isValid = false;
-    } else if (!/^[a-zA-ZåäöÅÄÖ\s]+$/.test(lastName.value)) {
-      lastNameError.textContent = 'Last name may only consist of letters.';
-      isValid = false;
-    } else {
-      lastNameError.textContent = '';
-    }
-  
-    // Email validation
-    const email = document.getElementById('email');
-    const emailError = document.getElementById('emailError');
-    if (email.value.trim() === '') {
-      emailError.textContent = 'Email can not be empty.';
-      isValid = false;
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
-      emailError.textContent = 'Please enter a valid email address.';
-      isValid = false;
-    } else {
-      emailError.textContent = '';
-    }
-  
-    // Message validation
-    const message = document.getElementById('message');
-    const messageError = document.getElementById('messageError');
-    if (message.value.trim() === '') {
-      messageError.textContent = 'Message can not be empty.';
-      isValid = false;
-    } else {
-      messageError.textContent = '';
-    }
-  
-    // If everything is validated, send form
-    if (isValid) {
-        showConfirmation(); 
-        clearForm(); 
-      }
-  });
+  event.preventDefault();
 
-  // Clear form function
+  let isValid = true;
 
-  function clearForm() {
-    const form = document.getElementById('contactForm');
-    form.reset();
+  // First name validation
+  const firstName = document.getElementById('fname');
+  const firstNameError = document.getElementById('fnameError');
+  if (firstName.value.trim() === '') {
+    firstNameError.textContent = 'First name can not be empty.';
+    isValid = false;
+  } else if (!/^[a-zA-ZåäöÅÄÖ\s]+$/.test(firstName.value)) {
+    firstNameError.textContent = 'First name may only consist of letters.';
+    isValid = false;
+  } else {
+    firstNameError.textContent = '';
   }
+
+  // Last name validation
+  const lastName = document.getElementById('lname');
+  const lastNameError = document.getElementById('lnameError');
+  if (lastName.value.trim() === '') {
+    lastNameError.textContent = 'Last name can not be empty.';
+    isValid = false;
+  } else if (!/^[a-zA-ZåäöÅÄÖ\s]+$/.test(lastName.value)) {
+    lastNameError.textContent = 'Last name may only consist of letters.';
+    isValid = false;
+  } else {
+    lastNameError.textContent = '';
+  }
+
+  // Email validation
+  const email = document.getElementById('email');
+  const emailError = document.getElementById('emailError');
+  if (email.value.trim() === '') {
+    emailError.textContent = 'Email can not be empty.';
+    isValid = false;
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+    emailError.textContent = 'Please enter a valid email address.';
+    isValid = false;
+  } else {
+    emailError.textContent = '';
+  }
+
+  // Message validation
+  const message = document.getElementById('message');
+  const messageError = document.getElementById('messageError');
+  if (message.value.trim() === '') {
+    messageError.textContent = 'Message can not be empty.';
+    isValid = false;
+  } else {
+    messageError.textContent = '';
+  }
+
+  // If everything is validated, send form
+  if (isValid) {
+      showConfirmation(); 
+      clearForm(); 
+    }
+});
+
+// Clear form function
+
+function clearForm() {
+  const form = document.getElementById('contactForm');
+  form.reset();
+}
 
   // Form confirmation message
 

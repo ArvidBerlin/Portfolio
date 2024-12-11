@@ -572,9 +572,33 @@ footer p {
     color: #3963b3;
 }
 
-#github {
-    font-size: 35px;
-    color: #e2ad49;
-    padding-left: 20px;
+#github-link:hover {
+    color: #86329f;
 }
 
+.contact-info {
+    color: #8550cf;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+.confirmation-message {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    background-color: #c68061;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 95%;
+    z-index: 1000;
+}
