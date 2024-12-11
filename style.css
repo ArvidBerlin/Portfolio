@@ -13,6 +13,10 @@ p {
     font-size: 16px;
 }
 
+a {
+    font-family: "GeistMono";
+}
+
 .headermenu {
     display: flex;
     justify-content: space-between;
@@ -86,6 +90,7 @@ footer p {
     color: #be49e2;
     padding-left: 20px;
 }
+
 
 /* Index page */
 
@@ -184,6 +189,7 @@ footer p {
     vertical-align: middle; 
 }
 
+
 /* About page */
 
 .about {
@@ -215,6 +221,7 @@ footer p {
     border-radius: 50%;
     flex-shrink: 0;
 }
+
 
 /* Skills page */
 
@@ -262,6 +269,7 @@ footer p {
 .film-skills {
     padding-bottom: 52px;
 }
+
 
 /* Portfolio page */
 
@@ -390,3 +398,109 @@ footer p {
     flex-shrink: 0;
 }
 
+
+/* Contact page */
+
+
+.contact-page h2 {
+    color: #d0bbf0;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px; 
+    padding: 20px;
+    padding-bottom: 136px;
+}
+
+.contactform, 
+.contact-details {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    flex: 1; 
+    max-width: 100%; 
+}
+
+.contactform form {
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    gap: 10px; 
+}
+
+.contactform input,
+.contactform button,
+.contactform textarea {
+    padding: 10px; 
+    font-size: 16px;
+    background-color: #35175f;
+}
+
+.contactform input,
+.contactform textarea {
+    color: #c5a6ef;
+}
+
+.contactform button {
+    background-color: #8550cf;
+    cursor: pointer;
+}
+
+.contactform button:hover {
+    background-color: #b091dc;
+}
+
+.contact-details table {
+    width: 100%; 
+    text-align: left;
+}
+
+.contact-details a {
+    display: inline-block; 
+    text-decoration: none;
+    font-family: "GeistMono", monospace;
+    margin-top: 10px; 
+    font-size: 20px; 
+    color: #8550cf;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #b091dc;
+}
+
+.contact-details a .bx {
+    font-family: 'boxicons'; 
+    font-style: normal;
+}
+
+.contact-details a i {
+    font-size: 40px;
+}
+
+#linkedin-link {
+    color: #497fe2;
+    transition: color 0.3s ease;
+}
+
+#github-link {
+    color: #be49e2;
+    transition: color 0.3s ease;
+}
+
+#linkedin-link:hover {
+    color: #3963b3;
+}
+
+#github-link:hover {
+    color: #86329f;
+}
+
+.contact-info {
+    color: #8550cf;
+}
