@@ -91,6 +91,16 @@ footer p {
     padding-left: 20px;
 }
 
+#linkedin:hover {
+    color: #365da7;
+    transition: color 0.2s ease
+}
+
+#github:hover {
+    color: #8b36a5;
+    transition: color 0.2s ease
+}
+
 
 /* Index page */
 
