@@ -76,6 +76,10 @@ I chose a **monochromatic color scheme** with varying shades of dark blue and pu
 - **Icons**: Social media icons (GitHub and LinkedIn) in the footer are simple and clear, providing quick access to my profiles.
 - **Visual Elements**: Minimalistic patterns and icons ensure the design remains clean and user-friendly.
 
+## Responsiveness
+
+The portfolio is fully responsive and optimized for mobile devices and tablets, ensuring a seamless user experience across different screen sizes.
+
 ## Preview
 
 ### Home Page
