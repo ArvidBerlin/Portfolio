@@ -459,6 +459,12 @@ footer p {
     text-align: left;
 }
 
+.contact-details th,
+.contact-details td {
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
 .contact-details a {
     display: inline-block; 
     text-decoration: none;
