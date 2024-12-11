@@ -401,7 +401,6 @@ footer p {
 
 /* Contact page */
 
-
 .contact-page h2 {
     color: #d0bbf0;
     text-align: center;
@@ -414,7 +413,7 @@ footer p {
     justify-content: center;
     gap: 40px; 
     padding: 20px;
-    padding-bottom: 136px;
+    padding-bottom: 78px;
 }
 
 .contactform, 
@@ -504,3 +503,10 @@ footer p {
 .contact-info {
     color: #8550cf;
 }
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+  }
