@@ -35,7 +35,16 @@
             <h2>Arvid Berlin.</h2>
             <p>I design websites and make movies. Welcome to my portfolio.</p>
             <article class="buttons">
-                <a class="download-button" href="#">Download resumé</a>
+                <a class="download-button" id="download-link" href="/downloads/Arvid_Berlin_-_Webbutvecklare.pdf" download>Download resumé</a>
+                <div id="custom-confirm" class="confirm-overlay">
+                    <div class="confirm-box">
+                        <p>Do you want to download resumé?</p>
+                        <div class="confirm-buttons">
+                            <button id="confirm-yes">Yes</button>
+                            <button id="confirm-no">No</button>
+                        </div>
+                    </div>
+                </div>
                 <a class="contact-button" href="contact.html">Contact me</a>
             </article>
         </section>

@@ -16,6 +16,43 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+/* Resumé download check */
+
+function setupDownloadConfirmation() {
+  // Get elements
+  const downloadLink = document.getElementById("download-link");
+  const customConfirm = document.getElementById("custom-confirm");
+  const confirmYes = document.getElementById("confirm-yes");
+  const confirmNo = document.getElementById("confirm-no");
+
+  // Show confirm box when user clicks on link
+  downloadLink.addEventListener("click", function (event) {
+      event.preventDefault(); 
+      customConfirm.style.display = "flex"; 
+  });
+
+  // If user confirms
+  confirmYes.addEventListener("click", function () {
+      const link = document.createElement("a");
+      link.href = "/downloads/Arvid_Berlin_-_Webbutvecklare.pdf"; 
+      link.download = "Arvid_Berlin_-_Webbutvecklare.pdf"; 
+      link.click(); 
+      customConfirm.style.display = "none"; 
+  });
+
+  // If user aborts
+  confirmNo.addEventListener("click", function () {
+      customConfirm.style.display = "none"; 
+      console.log("Download aborted."); 
+  });
+}
+
+// Run when page is loaded
+document.addEventListener("DOMContentLoaded", function () {
+  setupDownloadConfirmation();
+});
+
+
 /* Weather API */
 
 document.addEventListener('DOMContentLoaded', function () {
