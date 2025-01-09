@@ -36,8 +36,8 @@ function setupDownloadConfirmation() {
   // If user confirms
   confirmYes.addEventListener("click", function () {
       const link = document.createElement("a");
-      link.href = "/downloads/Arvid_Berlin_-_Webbutvecklare.pdf"; 
-      link.download = "Arvid_Berlin_-_Webbutvecklare.pdf"; 
+      link.href = "/downloads/Arvid.pdf"; 
+      link.download = "/downloads/Arvid.pdf"; 
       link.click(); 
       customConfirm.style.display = "none"; 
   });
