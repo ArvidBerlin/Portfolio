@@ -324,9 +324,17 @@ footer p {
     gap: 10px;
 }
 
+.web-skills figure {
+    padding: 0 20px 0 20px;
+}
+
 .web-skills img, .film-skills img {
     width: 100px;
-    height: auto;
+    height: 100px;
+}
+
+#cms {
+    filter: invert(100%) brightness(80%);
 }
 
 .web-skills figcaption, .film-skills figcaption {
@@ -375,6 +383,16 @@ footer p {
 }
 
 #harrys {
+    width: 450px;
+    height: auto;
+}
+
+#movie-quiz {
+    width: 450px;
+    height: auto;
+}
+
+#movie-quiz-question {
     width: 450px;
     height: auto;
 }
